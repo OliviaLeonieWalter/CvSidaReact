@@ -1,0 +1,44 @@
+.navbar{
+    background: #a6d2b1;
+}
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-top: 0em;
+    padding-left: 0;
+    margin-top: 0em;
+}
+.navbar .logo-name{
+    font-size: 400%;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+.nav-items .nav-text{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+}
+.navbar a{
+
+    font-size: 110%;
+    text-decoration: none;
+    color: black;
+}
+.navbar nav a:hover{
+    font-weight: bold;
+}
+@media only screen and (min-width: 900px) {
+    .navbar {
+        display: flex;
+    }
+    .navbar .logo-name{
+        padding-top: 0.25em;
+    }
+    .navbar .nav-items{
+        margin: auto;
+        padding-top: 2.8em;
+        list-style-type: none;
+    }  
+}

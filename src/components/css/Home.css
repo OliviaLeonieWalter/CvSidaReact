@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #c2f1cf;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Raleway";
+}
+
+/* Hero Section properties*/
+main{
+    background: #c2f1cf;
+}
+
+#profil-picture{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-content .info-squares h1{
+    background-color: #ecc8b8;
+    padding: 0.4em 0.8em;
+    margin-bottom: 0em;
+    font-size: 120%;
+    text-align: center;
+}
+
+.hero-content .info-squares li{
+    margin-left: 0.5em;
+}
+.hero-content .info-squares .info-squares-content{
+    background-color: #ffd9c6;
+    padding:1em 1em;
+    width: 12em;
+    font-size: 1.2em; 
+    margin: 0 auto;
+}
+.hero-content .info-squares .info-square-personal{
+    margin-bottom: 3em;
+}
+#nature-picture{
+    display: none;
+} 
+
+@media only screen and (min-width: 1200px) {
+
+    .hero-content{
+        margin-top: -2.4em;
+        margin-bottom:-2.4em;
+        flex-direction: row;
+        align-items: center;
+    }
+    #profil-picture{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        margin-left: 2em;
+    }
+    .hero-content .info-squares{
+        display: flex;
+        flex-direction: row;
+        margin-top:  20em;
+        z-index: 2;
+    }
+    .hero-content .info-squares .info-square-title{
+        margin-left: 2em;
+    }
+    #nature-picture{
+        margin-top: 1.3em;
+        display: block;
+        height: 650px;
+        width: 650px;
+        margin-left: -500px;  
+    }
+}
+@media only screen and (min-height: 1200px){
+    .hero-content{
+        padding-top: 2em;
+        margin-bottom: -3.5em;
+        margin-top: -3.5em;
+    }
+}

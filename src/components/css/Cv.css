@@ -1,0 +1,77 @@
+.Cv-content .smaller-sideinformation .name{
+    font-size: 200%;
+    text-align: center;
+}
+#picture-of-me{
+    height: 300px;
+    width: 250px;
+}
+.Cv-content{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+.Cv-content .smaller-sideinformation{
+    text-align: center;
+    padding: 2em;
+    margin-right: 0;
+    background-color: #d5f8df;
+}
+.Cv-content .bigger-mainInformation{
+    background-color:#d5f8df;
+    margin-left: 0;
+    padding: 2em;
+}
+.Cv-content .bigger-mainInformation h1{
+    font-size: 1.5em;
+}
+.Cv-content .bigger-mainInformation h2{
+    font-size: 1em;
+}
+@media only screen and (min-width: 800px){
+
+    /* Hero Section properties*/
+    .Cv-content{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Cv-content .smaller-sideinformation{
+        text-align: left;
+        width: 15em;
+    }
+    .Cv-content .smaller-sideinformation .name{
+        border-bottom: solid;
+        border-top: solid;
+        border-left: hidden;
+        border-right: hidden;
+        border-color: mediumaquamarine;
+    }
+    .Cv-content .smaller-sideinformation h1{
+        padding: 1em;
+        text-align: center;
+        border-bottom: solid;
+        border-top: solid;
+        border-left: hidden;
+        border-right: hidden;
+        border-color: mediumaquamarine;
+    }
+    .Cv-content .bigger-mainInformation{
+        width: 25em;
+        flex-direction: column;
+    }
+    .Cv-content .bigger-mainInformation h1{
+        padding: 1em;
+        text-align: center;
+        border-bottom: solid;
+        border-top: solid;
+        border-left: hidden;
+        border-right: hidden;
+        border-color: mediumaquamarine;
+    }
+    .Cv-content .bigger-mainInformation h2{
+        text-align: center;
+    }
+    .Cv-content .bigger-mainInformation .tidsperiod{
+        font-weight: 100;
+    }
+}
